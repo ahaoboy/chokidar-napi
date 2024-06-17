@@ -1,6 +1,6 @@
 {
   "name": "@chokidar-napi/chokidar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A cross-platform command line utility to watch file system changes.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -38,11 +38,9 @@
       "i686-pc-windows-msvc",
       "armv7-unknown-linux-gnueabihf",
       "aarch64-linux-android",
-      "x86_64-unknown-freebsd",
       "aarch64-unknown-linux-musl",
       "aarch64-pc-windows-msvc",
-      "armv7-linux-androideabi",
-      "wasm32-wasi-preview1-threads"
+      "armv7-linux-androideabi"
     ]
   },
   "engines": {
