@@ -9,7 +9,7 @@
     "chokidar": "./cli.js"
   },
   "repository": {
-    "url": "https://github.com/ahaoboy/chokidar-napi",
+    "url": "git+https://github.com/ahaoboy/chokidar-napi.git",
     "type": "git"
   },
   "license": "MIT",
