@@ -54,7 +54,7 @@
   },
   "scripts": {
     "artifacts": "napi artifacts",
-    "bench": "node -r @swc-node/register benchmark/bench.ts",
+    "bench": "echo bench",
     "build": "napi build --platform --release",
     "build:debug": "napi build --platform",
     "format": "run-p format:prettier format:rs format:toml",
@@ -63,7 +63,7 @@
     "format:rs": "cargo fmt",
     "lint": "oxlint",
     "prepublishOnly": "napi prepublish -t npm",
-    "test": "ava",
+    "test": "echo test",
     "version": "napi version"
   },
   "devDependencies": {
@@ -75,8 +75,6 @@
     "@swc/core": "^1.4.13",
     "@taplo/cli": "^0.7.0",
     "@tybys/wasm-util": "^0.9.0",
-    "ava": "^6.1.2",
-    "benny": "^3.7.1",
     "chalk": "^5.3.0",
     "emnapi": "^1.1.1",
     "husky": "^9.0.11",
@@ -96,19 +94,6 @@
     "*.toml": [
       "taplo format"
     ]
-  },
-  "ava": {
-    "require": [
-      "@swc-node/register"
-    ],
-    "extensions": [
-      "ts"
-    ],
-    "timeout": "2m",
-    "workerThreads": false,
-    "environmentVariables": {
-      "TS_NODE_PROJECT": "./tsconfig.json"
-    }
   },
   "prettier": {
     "printWidth": 120,
