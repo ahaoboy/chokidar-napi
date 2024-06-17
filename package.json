@@ -1,6 +1,6 @@
 {
   "name": "@chokidar-napi/chokidar",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A cross-platform command line utility to watch file system changes.",
   "main": "index.js",
   "types": "index.d.ts",
