@@ -7,13 +7,14 @@ version = "0.1.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
-crate-type = ["cdylib"]
+crate-type = ["cdylib", "rlib"]
 
 [dependencies]
 napi = "2"
 napi-derive = "2"
-chokidar = { version = "0.1.1" }
+chokidar = { git = "https://github.com/ahaoboy/chokidar.git" }
 clap = { version = "4.5", features = ["derive"] }
+wasm-bindgen = "0.2"
 
 [build-dependencies]
 napi-build = "2"
